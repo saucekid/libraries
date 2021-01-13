@@ -214,9 +214,9 @@ do
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
 			Name = title,
-			Parent = game.CoreGui
+			--Parent = game.CoreGui
 		}, {
-			utility:Create("ImageLabel", {
+		        utility:Create("ImageLabel", {
 				Name = "Main",
 				BackgroundTransparency = 1,
 				Position = UDim2.new(0.25, 0, 0.052435593, 0),
@@ -291,6 +291,10 @@ do
 				})
 			})
 		})
+		
+		if syn then syn.protect_gui(container) end
+		container.Parent = game.CoreGui
+		
 		
 		utility:InitializeKeybind()
 		utility:DraggingEnabled(container.Main.TopBar, container.Main)
@@ -2167,5 +2171,5 @@ do
 	end
 end
 
-print("lol")
+print("venyx loaded")
 return library
