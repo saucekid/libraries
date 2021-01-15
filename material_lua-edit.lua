@@ -10,7 +10,7 @@ local ContentService = game:GetService("ContentProvider")
 
 local Themes = {
 	Default = {
-		MainFrame = Color3.fromRGB(219, 68, 103),
+		MainFrame = Color3.fromRGB(255,255,255),
 		Minimise = Color3.fromRGB(219, 210, 202),
 		MinimiseAccent = Color3.fromRGB(219, 210, 202),
 		Maximise = Color3.fromRGB(189, 183, 177),
