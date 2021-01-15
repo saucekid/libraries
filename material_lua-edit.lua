@@ -2258,23 +2258,11 @@ function Material.Load(Config)
 			local LabelContainer = Objects.new("Round")
 			LabelContainer.Name = "Label"
 			LabelContainer.Size = UDim2.fromScale(1,0) + UDim2.fromOffset(0,20)
-			
-			if theme == "Default" then
 			LabelContainer.ImageColor3 = Theme.Label
-			   else
-			LabelContainer.ImageColor3 = Theme.MainFrame
-			end
-			
 			LabelContainer.Parent = PageContentFrame
 			
 			local LabelContent = Objects.new("Label")
-			
-			if theme == "Default" then
 			LabelContent.TextColor3 = Theme.LabelAccent
-			   else
-			LabelContent.TextColor3 = Theme.ChipSet
-			end
-			
 			LabelContent.Text = LabelText:upper()
 			LabelContent.TextSize = 12
 			LabelContent.Font = Enum.Font.GothamSemibold
